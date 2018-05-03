@@ -150,7 +150,7 @@ body {
     width: 3px;
     background-color: var(--primary);
     transform: scaleY(0);
-    transition: transform .5s, width .4s .1s; }
+    transition: transform .5s, width .4s .1s; }
   .side-nav__item:hover::before, .side-nav__item--active::before {
     transform: scaleY(1);
     width: 100%; }
@@ -177,6 +177,19 @@ body {
   color: var(--dark-text-color);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__icon-star {
+    height: 2rem; }
+  .overview__icon-location {
+    height: 2rem; }
 
 .container {
   max-width: 120rem;
