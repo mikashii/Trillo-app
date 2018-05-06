@@ -212,19 +212,34 @@ border-bottom: 1px solid var(--grey-light-2);
         height: 1.75rem;
         width: 1.75rem;
         fill: var(--primary);
-        margin-right: auto;
+        margin-right: .5rem;
     }
     &__location{
-        
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
     }
     &__rating{
+        background-color: var(--primary);
+        margin-left: 3rem;
+        color: #fff;
+        align-self: stretch;
+        justify-content: center;
+        padding: 1.5rem;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -3px;
     }
-    &__rating-avarege{
-
+    &__rating-average{
+        font-size: 2.35rem;
+        font-weight: 300;
+        
     }
     &__rating-count{
-
+        font-size: .8rem;
+        text-transform: uppercase;
     }
 }
 .btn-inline{
@@ -248,15 +263,67 @@ border-bottom: 1px solid var(--grey-light-2);
 
 @keyframes pulsate {
     0%{
-        transform: scale(0);
+        transform: scale(1);
         box-shadow: none;
     }
     50%{
-        transform: scale(1.1);
+        transform: scale(1.05);
         box-shadow: 0 1rem 4rem rgba (0,0,0, .25);
+        -webkit-font-smoothing: antialised;
     }
     100%{
         transform: scale(1);
         box-shadow: none;
     }
 }
+////////////////////////////////////////////////////
+////// Paragraph
+.paragraph:not(:last-of-type){
+    margin-bottom: 2rem;
+}
+
+
+////////////////////////////////////////////////////
+////// List
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    margin: 3rem 0;
+    padding: 2.5rem;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    &__item{
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+
+        display: flex;
+        align-items: center;
+    }
+    &__item::before{
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: .4rem;
+
+        // older browser
+        //background-image: url(../img/chevron-thin-right.svg);
+       // background-size: cover;
+
+
+        // newer browsers
+        background-color: var(--primary);
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size:  cover;
+            -webkit-mask-image: url(../img/chevron-thin-right.svg);
+            -webkit-mask-size:  cover;
+
+    }
+}
+
+
+
+////////////////////////////////////////////////////
+////// Recommend

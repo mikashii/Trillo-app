@@ -4,7 +4,7 @@
   "description": "Trillo hotel",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass --watch sass:css"
   },
   "repository": {
     "type": "git",
