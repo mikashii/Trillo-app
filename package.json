@@ -1,27 +1,22 @@
 {
-  "name": "trillo",
+  "name": "trillo-app",
   "version": "1.0.0",
-  "description": "Trillo",
-  "main": "index.js",
+  "description": "Trillo hotel",
+  "main": "index.html",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jonas",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
-  },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikashii/Trillo-app.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mikashii/Trillo-app/issues"
   },
-  "homepage": "https://github.com/mikashii/Trillo-app#readme"
+  "homepage": "https://github.com/mikashii/Trillo-app#readme",
+  "dependencies": {
+    "sass": "^1.3.2"
+  }
 }
